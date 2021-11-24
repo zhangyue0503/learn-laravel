@@ -1,0 +1,2178 @@
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+[2021-10-29 01:23:36] local.ERROR: Too many arguments to "ZyBlog:Test1" command, expected arguments "a". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Too many arguments to \"ZyBlog:Test1\" command, expected arguments \"a\". at /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/symfony/console/Input/ArgvInput.php:186)
+[stacktrace]
+#0 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/symfony/console/Input/ArgvInput.php(80): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument('4')
+#1 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#2 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/symfony/console/Command/Command.php(215): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#3 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#4 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/symfony/console/Application.php(971): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/symfony/console/Application.php(290): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\test1), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/laravel/framework/src/Illuminate/Console/Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/zhangyue/MyDoc/博客文章/LearnLaravel/learn-laravel/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+
+
+                                                                         
+  Too many arguments to "ZyBlog:Test1" command, expected arguments "a".  
+                                                                         
+
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 2
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 3
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+2Array
+(
+    [0] => 3
+)
+欢迎进来测试！
+Array
+(
+    [command] => ZyBlog:Test1
+    [a] => 3
+)
+Array
+(
+    [b] => Array
+        (
+            [0] => 4
+        )
+
+    [help] => 
+    [quiet] => 
+    [verbose] => 
+    [version] => 
+    [ansi] => 
+    [no-ansi] => 
+    [no-interaction] => 
+    [env] => 
+)
+3Array
+(
+    [0] => 4
+)

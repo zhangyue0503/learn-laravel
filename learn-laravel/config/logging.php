@@ -37,7 +37,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['single', 'daily', 'errorlog'],
             'ignore_exceptions' => false,
         ],
 
@@ -89,6 +89,7 @@ return [
 
         'errorlog' => [
             'driver' => 'errorlog',
+            'path' => storage_path('logs/error.log'),
             'level' => env('LOG_LEVEL', 'debug'),
         ],
 
@@ -100,6 +101,13 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+        'custom'=>[
+            'driver'=>'custom',
+            'via'=>App\Logging\CreateCustomLogger::class,
+            'tap' => [App\Logging\CustomizeFormatter::class],
+            'path' => storage_path('logs/zyblog.log'),
+        ]
     ],
 
 ];

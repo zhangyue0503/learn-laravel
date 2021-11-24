@@ -2,7 +2,10 @@
 
 namespace App\Exceptions;
 
+use ErrorException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Log;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -34,8 +37,22 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
+        $this->reportable(function (ErrorException $e){
+            Log::channel('custom')->error($e->getMessage());
+        })->stop();
+
         $this->reportable(function (Throwable $e) {
             //
+        });
+
+        $this->renderable(function (\Exception $e, $request){
+            if($request->ajax()){
+                return response()->json(['code'=>$e->getCode(), 'msg'=>$e->getMessage()]);
+            }else{
+                if(!($e instanceof HttpException)){
+                    return response()->view('errors.custom', ['msg'=>$e->getMessage()], 500);
+                }
+            }
         });
     }
 }

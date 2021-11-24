@@ -9,8 +9,14 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "inertiajs/inertia-laravel": "^0.4.3",
         "laravel/framework": "^8.40",
-        "laravel/tinker": "^2.5"
+        "laravel/jetstream": "^2.4",
+        "laravel/sanctum": "^2.11",
+        "laravel/tinker": "^2.5",
+        "livewire/livewire": "^2.5",
+        "pusher/pusher-php-server": "~4.0",
+        "tightenco/ziggy": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
