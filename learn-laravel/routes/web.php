@@ -884,3 +884,18 @@ Route::get('queue/chain', function(){
         echo "Error:", $e->getMessage();
     })->dispatch();
 });
+
+Route::get('broadcasting/test', function(){
+    broadcast(new \App\Events\Messages("[" . date("Y-m-d H:i:s") . "] 新消息来了"));
+});
+
+Route::view('broadcasting/test2', "broadcasting.messages");
+
+
+Route::post("/test/post", function(){
+    return "aaa";
+});
+Route::post("/test/post/json", function(){
+    return response()->json(['a'=>1]);
+});
+

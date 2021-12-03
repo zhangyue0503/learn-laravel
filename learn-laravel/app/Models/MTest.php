@@ -15,4 +15,8 @@ class MTest extends Model
         return $this->belongsTo('App\Models\DbSex', 'sex');
     }
 
+    public static function testCulAdd($a, $b){
+        return $a+$b;
+    }
+
 }

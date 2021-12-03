@@ -17,3 +17,18 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+
+Artisan::command('testconsole', function () {
+    $this->line("Hello ZyBlog");
+});
+
+Artisan::command('question', function () {
+    $food = $this->choice('选择午饭', [
+        '面条',
+        '盖饭',
+        '火锅',
+    ]);
+
+    $this->line('你的选择是：'.$food);
+});
+
