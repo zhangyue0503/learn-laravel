@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
 
 class test1 extends Command
 {
@@ -71,6 +71,24 @@ class test1 extends Command
         // (
         //     [0] => 2
         // )
+
+        for ($i = 0; $i < 2000000; $i++) {
+            $data[] = [
+                'username'   => bin2hex(random_bytes(10)),
+                'password'   => bin2hex(random_bytes(20)),
+                'salt'       => bin2hex(random_bytes(2)),
+                'created_at' => date("Y-m-d H:i:s", random_int(time() - 86400 * 365, time())),
+                'updated_at' => random_int(time() - 86400 * 365, time()),
+                'status'     => random_int(-1, 4),
+                'gender'     => random_int(0, 2),
+            ];
+            if ($i % 2000 == 0) {
+                DB::table('test_user')->insert($data);
+                $data = [];
+            }
+        }
+        DB::table('test_user')->insert($data);
+
 
         return 1;
     }

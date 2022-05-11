@@ -61,9 +61,9 @@ class EventServiceProvider extends ServiceProvider
 //                "name" => "mysql3"
 //              ]
 
-//            if($event->connection->getConfig('name') == 'mysql3'){
-//                $event->statement->setFetchMode(\PDO::FETCH_ASSOC);
-//            }
+            if($event->connection->getConfig('name') == 'mysql3'){
+                $event->statement->setFetchMode(\PDO::FETCH_ASSOC);
+            }
 //            $event->statement->setFetchMode(\PDO::FETCH_ASSOC);
 
         });

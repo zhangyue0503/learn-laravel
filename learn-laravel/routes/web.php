@@ -21,12 +21,54 @@ Route::get('/custom/info', [\App\Http\Controllers\Auth\LoginController::class, '
 
 Route::get('/', function () {
 
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    echo 111;exit;
+
+    $random = function ($length) {
+        // 密码字符集，可任意添加你需要的字符
+        $chars = 'abcdefghijklmnopqrstuvwxyz';
+        $str = '';
+        for($i = 0; $i < $length; $i++)
+        {
+            // 这里提供两种字符获取方式
+            // 第一种是使用 substr 截取$chars中的任意一位字符；
+            // 第二种是取字符数组 $chars 的任意元素
+            $str .= substr($chars, mt_rand(0, strlen($chars) - 1), 1);
+//            $str .= $chars[mt_rand(0, strlen($chars) - 1)];
+        }
+        return $str;
+    };
+
+$key2 = range(1,100000);
+    shuffle($key2);
+    for($i=0;$i<100000;$i++){
+        $data = [
+            'key1'=>$random(3),
+            'key2'=>$key2[$i],
+            'key3'=>$random(3),
+            'key_part1'=>$random(3),
+            'key_part2'=>$random(3),
+            'key_part3'=>$random(3),
+            'common_field'=>$random(3),
+        ];
+        \Illuminate\Support\Facades\DB::table('single_table2')->insert($data);
+    }
+
+
+//    var_dump($_SERVER);
+//
+//    echo '================', PHP_EOL;
+//
+//    var_dump($_ENV);
+
+
+
+    //return view('welcome');
+//    return Inertia::render('Welcome', [
+//        'canLogin' => Route::has('login'),
+//        'canRegister' => Route::has('register'),
+//        'laravelVersion' => Application::VERSION,
+//        'phpVersion' => PHP_VERSION,
+//    ]);
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -36,8 +78,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::any('/request', function (\Illuminate\Http\Request $request) {
     $a = $request->input('a', '');
     echo $a; // 1
-    \Illuminate\Support\Facades\Log::info('ping this');
-    return $a; // 1
+//    \Illuminate\Support\Facades\Log::info('ping this');
+//    return $a; // 1
 });
 
 Route::get('/get/request', function () {
@@ -522,7 +564,7 @@ Route::get('db/tran/insert', function(){
 });
 
 Route::get('db/collection/list', function(){
-    dump( \Illuminate\Support\Facades\DB::connection('mysql3')->table('db_test')->get()->toArray());
+    dump( \Illuminate\Support\Facades\DB::connection('mysql3')->table('tran_innodb')->get()->toArray());
     dump(\Illuminate\Support\Facades\DB::connection('mysql3')->getPdo());
 //    attributes: {
 //      CASE: NATURAL
@@ -538,14 +580,19 @@ Route::get('db/collection/list', function(){
 //      CONNECTION_STATUS: "127.0.0.1 via TCP/IP"
 //      DEFAULT_FETCH_MODE: ASSOC
 //    }
-    dump( \Illuminate\Support\Facades\DB::connection('mysql')->table('db_test')->get()->toArray());
+    dump( \Illuminate\Support\Facades\DB::connection('mysql')->table('tran_innodb')->get()->toArray());
 });
 
 Route::get('redis/set', function(){
-    \Illuminate\Support\Facades\Redis::connection('default')->client()->set('test', 1);
+    \Illuminate\Support\Facades\Redis::connection('default')->client()->set('test', 2);
+    for($i = 0;$i<=100000;$i++){
+        \Illuminate\Support\Facades\Redis::connection('default')->client()->zAdd("phpzadd",[], rand(1, 100), "k".$i );
+    }
+
 });
 
 Route::get('redis/get', function(){
+//    echo \Illuminate\Support\Facades\Redis::connection('default')->client()->('a');
     echo \Illuminate\Support\Facades\Redis::connection('default')->client()->get('test');
 });
 
@@ -658,6 +705,17 @@ Route::get('container/test1', function(){
 
     $zyblog = app()->make('zyblog');
     $zyblog->ShuaDuanShiPin(); // App\ContainerTest\Mi11打开douyin
+
+    // 上下文绑定
+    app()->when(\App\ContainerTest\ZyBlog::class)
+        ->needs(\App\ContainerTest\IntelligencePhone::class)
+        ->give(\App\ContainerTest\Mi11::class);
+
+    $zyblog = app()->make(\App\ContainerTest\ZyBlog::class);
+    $zyblog->ShuaDuanShiPin(); // App\ContainerTest\Mi11打开douyin
+
+
+
 
 });
 

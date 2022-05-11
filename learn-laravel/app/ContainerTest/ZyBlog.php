@@ -8,6 +8,11 @@ class ZyBlog
 {
     private $phone;
 
+//    public function __construct(IntelligencePhone $phone)
+//    {
+//        $this->phone = $phone;
+//    }
+
     public function setPhone(IntelligencePhone $phone){
         $this->phone = $phone;
     }
