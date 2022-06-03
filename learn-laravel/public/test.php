@@ -60,40 +60,45 @@ class ZyBlog {
 }
 
 // 回调函数问题
-$zy = new ZyBlog();
-dump($zy);
-
-$callZy = function(){
-    return new ZyBlog();
-};
-// ……
-// ……
-// ……
-$zy = $callZy();
-dump($zy);
+//$zy = new ZyBlog();
+////var_dump($zy);
+//$zy->ShuaDuanShiPin(new Mi11());
+//exit;
 
 
+//$callZy = function(){
+//    return new ZyBlog();
+//};
+//// ……
+//// ……
+//// ……
+//$zy = $callZy();
+//var_dump($zy);
+
+//exit;
 
 // 容器使用-回调方式
-$container = new Container();
-
-$container->bind(iPhone12::class, function(){
-    return new iPhone12();
-});
-$container->bind(Mi11::class, function(){
-    return new Mi11();
-});
-$container->bind(ZyBlog::class, function(){
-    return new ZyBlog();
-});
-
-$zyBlog1 = $container->make(ZyBlog::class);
-
-$zyBlog1->ShuaDuanShiPin($container->make(iPhone12::class));
-
-$zyBlog2 = $container->make(ZyBlog::class);
-
-var_dump($zyBlog2 === $zyBlog1);
+//$container = new Container();
+//
+//$container->bind(iPhone12::class, function(){
+//    return new iPhone12();
+//});
+//$container->bind(Mi11::class, function(){
+//    return new Mi11();
+//});
+//$container->bind(ZyBlog::class, function(){
+//    return new ZyBlog();
+//});
+//
+//$zyBlog1 = $container->make(ZyBlog::class);
+//
+//$zyBlog1->ShuaDuanShiPin($container->make(Mi11::class));
+//
+//$zyBlog2 = $container->make(ZyBlog::class);
+//
+//var_dump($zyBlog2 === $zyBlog1);
+//
+//exit;
 
 // 容器使用-单例实例化方式
 $container2 = new Container();

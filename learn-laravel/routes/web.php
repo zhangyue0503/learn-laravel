@@ -692,25 +692,21 @@ Route::get('container/test1', function(){
 //    app()->singleton('zyblog', function(){
 //        return new \App\ContainerTest\ZyBlog();
 //    });
+//
+//    $zyblog = app()->make('zyblog');
+//    $zyblog->ShuaDuanShiPin(app()->make('mi11')); // App\ContainerTest\iPhone12打开douyi
+
+//    app()->register(\App\Providers\PhoneServiceProvider::class);
+//    app()->register(\App\Providers\ZyBlogServiceProvider::class);
 
 //    $zyblog = app()->make('zyblog');
-//    $zyblog->ShuaDuanShiPin(app()->make('iphone12')); // App\ContainerTest\iPhone12打开douyi
-
-//    [$a, $b] = [1, 2];
+//    $zyblog->ShuaDuanShiPin(); // App\ContainerTest\Mi11打开douyin
 //
-//    echo $a, $b;
-
-    app()->register(\App\Providers\PhoneServiceProvider::class);
-    app()->register(\App\Providers\ZyBlogServiceProvider::class);
-
-    $zyblog = app()->make('zyblog');
-    $zyblog->ShuaDuanShiPin(); // App\ContainerTest\Mi11打开douyin
-
-    // 上下文绑定
+//    // 上下文绑定
     app()->when(\App\ContainerTest\ZyBlog::class)
         ->needs(\App\ContainerTest\IntelligencePhone::class)
-        ->give(\App\ContainerTest\Mi11::class);
-
+        ->give(\App\ContainerTest\iPhone12::class);
+//
     $zyblog = app()->make(\App\ContainerTest\ZyBlog::class);
     $zyblog->ShuaDuanShiPin(); // App\ContainerTest\Mi11打开douyin
 
@@ -766,8 +762,8 @@ Route::get('log/test', function(){
 
     \Illuminate\Support\Facades\Log::channel('errorlog')->info($message);
     \Illuminate\Support\Facades\Log::stack(['daily', 'errorlog'])->info($message);
-
-
+//
+//
     \Illuminate\Support\Facades\Log::channel('custom')->info($message."custom");
 });
 
