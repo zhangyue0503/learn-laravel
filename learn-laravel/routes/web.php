@@ -21,48 +21,48 @@ Route::get('/custom/info', [\App\Http\Controllers\Auth\LoginController::class, '
 
 Route::get('/', function () {
 
-    echo 111;exit;
+//     echo 111;exit;
 
-    $random = function ($length) {
-        // 密码字符集，可任意添加你需要的字符
-        $chars = 'abcdefghijklmnopqrstuvwxyz';
-        $str = '';
-        for($i = 0; $i < $length; $i++)
-        {
-            // 这里提供两种字符获取方式
-            // 第一种是使用 substr 截取$chars中的任意一位字符；
-            // 第二种是取字符数组 $chars 的任意元素
-            $str .= substr($chars, mt_rand(0, strlen($chars) - 1), 1);
-//            $str .= $chars[mt_rand(0, strlen($chars) - 1)];
-        }
-        return $str;
-    };
+//     $random = function ($length) {
+//         // 密码字符集，可任意添加你需要的字符
+//         $chars = 'abcdefghijklmnopqrstuvwxyz';
+//         $str = '';
+//         for($i = 0; $i < $length; $i++)
+//         {
+//             // 这里提供两种字符获取方式
+//             // 第一种是使用 substr 截取$chars中的任意一位字符；
+//             // 第二种是取字符数组 $chars 的任意元素
+//             $str .= substr($chars, mt_rand(0, strlen($chars) - 1), 1);
+// //            $str .= $chars[mt_rand(0, strlen($chars) - 1)];
+//         }
+//         return $str;
+//     };
 
-$key2 = range(1,100000);
-    shuffle($key2);
-    for($i=0;$i<100000;$i++){
-        $data = [
-            'key1'=>$random(3),
-            'key2'=>$key2[$i],
-            'key3'=>$random(3),
-            'key_part1'=>$random(3),
-            'key_part2'=>$random(3),
-            'key_part3'=>$random(3),
-            'common_field'=>$random(3),
-        ];
-        \Illuminate\Support\Facades\DB::table('single_table2')->insert($data);
-    }
-
-
-//    var_dump($_SERVER);
-//
-//    echo '================', PHP_EOL;
-//
-//    var_dump($_ENV);
+// $key2 = range(1,100000);
+//     shuffle($key2);
+//     for($i=0;$i<100000;$i++){
+//         $data = [
+//             'key1'=>$random(3),
+//             'key2'=>$key2[$i],
+//             'key3'=>$random(3),
+//             'key_part1'=>$random(3),
+//             'key_part2'=>$random(3),
+//             'key_part3'=>$random(3),
+//             'common_field'=>$random(3),
+//         ];
+//         \Illuminate\Support\Facades\DB::table('single_table2')->insert($data);
+//     }
 
 
+// //    var_dump($_SERVER);
+// //
+// //    echo '================', PHP_EOL;
+// //
+// //    var_dump($_ENV);
 
-    //return view('welcome');
+
+
+    return view('welcome');
 //    return Inertia::render('Welcome', [
 //        'canLogin' => Route::has('login'),
 //        'canRegister' => Route::has('register'),
