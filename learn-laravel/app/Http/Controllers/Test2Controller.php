@@ -10,5 +10,6 @@ class Test2Controller extends Controller
     public function __invoke()
     {
         echo 'single action controller';
+        
     }
 }

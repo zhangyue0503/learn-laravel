@@ -8,6 +8,7 @@ class TestController extends Controller
 {
     //
     public function test(){
+        new Pheanstalk();
     }
 
     public function test2(Request $request, $id){
